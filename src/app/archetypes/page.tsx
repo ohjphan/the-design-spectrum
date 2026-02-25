@@ -9,9 +9,9 @@ export default function ArchetypesPage() {
           7 Design Archetypes
         </h1>
 
-        <ul className="grid gap-6 grid-cols-1">
+        <ul className="grid grid-cols-1">
           {archetypes.map((archetype) => (
-            <li key={archetype.id}>
+            <li key={archetype.id} className="-mt-px first:mt-0">
               <Link
                 href={`/archetypes/${archetype.id}`}
                 className="block border border-gray-light bg-background px-6 py-6 transition-colors hover:border-foreground"

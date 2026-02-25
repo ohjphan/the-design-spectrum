@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { getArchetypeById } from "@/lib/data";
 import {
   computeArchetypeResult,
@@ -8,11 +10,38 @@ import {
 import { ArchetypeRadarChart } from "@/components/ArchetypeRadarChart";
 import { ResultHero } from "@/components/ResultHero";
 import { ResultTabs } from "@/components/ResultTabs";
-import { Button } from "@/components/Button";
-import { ShareResult } from "@/components/ShareResult";
+import { ShareBar } from "@/components/ShareBar";
+
+const OG_TITLE = "Check out my design archetype";
+const OG_DESCRIPTION =
+  "Discover your product design archetype with The Design Spectrum.";
 
 interface ResultsPageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export async function generateMetadata({
+  searchParams,
+}: ResultsPageProps): Promise<Metadata> {
+  const sp = await searchParams;
+  const params = new URLSearchParams(
+    typeof sp.d === "string" ? { d: sp.d, s: sp.s as string } : {}
+  );
+  const decoded = decodeResultFromUrl(params);
+  const archetypeLabel = decoded
+    ? getArchetypeById(decoded.dominant)?.label
+    : null;
+  const title = archetypeLabel
+    ? `${OG_TITLE} — ${archetypeLabel}`
+    : OG_TITLE;
+  return {
+    title,
+    description: OG_DESCRIPTION,
+    openGraph: {
+      title,
+      description: OG_DESCRIPTION,
+    },
+  };
 }
 
 export default async function ResultsPage({ searchParams }: ResultsPageProps) {
@@ -77,8 +106,14 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
     );
   }
 
+  const resultsPath = `/results?${encodeResultForUrl(result)}`;
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "localhost:3000";
+  const proto = headersList.get("x-forwarded-proto") ?? "http";
+  const fullShareUrl = `${proto}://${host}${resultsPath}`;
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-24">
       <main className="mx-auto max-w-[868px] px-6 py-12 sm:px-12 lg:px-16">
         <div className="space-y-16">
           <ResultHero
@@ -92,12 +127,16 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
           </div>
           <ResultTabs result={result} />
         </div>
-
-        <div className="mt-16 flex flex-wrap items-center gap-4">
-          <Button href="/quiz">Retake quiz</Button>
-          <ShareResult shareUrl={`/results?${encodeResultForUrl(result)}`} />
-        </div>
       </main>
+
+      <footer
+        className="fixed bottom-0 left-0 right-0 z-30 border-t border-gray-light bg-background py-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
+        aria-label="Results actions"
+      >
+        <div className="mx-auto flex max-w-[868px] justify-center px-6 sm:px-12 lg:px-16">
+          <ShareBar shareUrl={resultsPath} fullUrl={fullShareUrl} />
+        </div>
+      </footer>
     </div>
   );
 }

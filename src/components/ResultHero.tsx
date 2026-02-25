@@ -35,7 +35,7 @@ export function ResultHero({
   }
 
   const showEmoji =
-    dominant.emoji && (variant === "detail" || !isAdaptiveGeneralist);
+    dominant.emoji && variant !== "detail" && !isAdaptiveGeneralist;
 
   return (
     <header className="space-y-4">

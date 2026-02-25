@@ -27,13 +27,13 @@ export function PhaseExplorer({ phases }: PhaseExplorerProps) {
         Explore which archetypes shine and why for each phase.
       </p>
 
-      <nav className="flex flex-wrap gap-2 border-b border-gray-light pb-0">
+      <nav className="flex flex-nowrap gap-1 overflow-x-auto border-b border-gray-light pb-0 sm:gap-2">
         {phases.map((phase) => (
           <button
             key={phase.id}
             type="button"
             onClick={() => setActiveId(phase.id)}
-            className={`border-b-2 px-6 py-2 text-sm font-medium transition-colors ${
+            className={`shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
               activeId === phase.id
                 ? "border-accent text-foreground"
                 : "border-transparent text-gray-mid hover:text-foreground"

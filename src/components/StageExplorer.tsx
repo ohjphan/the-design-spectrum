@@ -4,14 +4,22 @@ import { useState } from "react";
 import Link from "next/link";
 import type { StageFit } from "@/lib/types";
 import { getArchetypesByIds } from "@/lib/data";
+import { STAGE_LINKEDIN_URLS } from "@/lib/linkedin-urls";
 
 interface StageExplorerProps {
   stages: StageFit[];
+  /** When provided (e.g. from ?stage= in URL), open this tab on load. */
+  initialStageId?: string;
 }
 
-export function StageExplorer({ stages }: StageExplorerProps) {
+export function StageExplorer({
+  stages,
+  initialStageId,
+}: StageExplorerProps) {
   const [activeId, setActiveId] = useState<string>(
-    stages[0]?.id ?? ""
+    initialStageId && stages.some((s) => s.id === initialStageId)
+      ? initialStageId
+      : stages[0]?.id ?? ""
   );
   const selected = stages.find((s) => s.id === activeId);
   const archetypes = selected
@@ -27,13 +35,13 @@ export function StageExplorer({ stages }: StageExplorerProps) {
         Explore which archetypes thrive and what the company needs at that stage.
       </p>
 
-      <nav className="flex flex-wrap gap-2 border-b border-gray-light pb-0">
+      <nav className="flex flex-nowrap gap-1 overflow-x-auto border-b border-gray-light pb-0 sm:gap-2">
         {stages.map((stage) => (
           <button
             key={stage.id}
             type="button"
             onClick={() => setActiveId(stage.id)}
-            className={`border-b-2 px-6 py-2 text-sm font-medium transition-colors ${
+            className={`shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
               activeId === stage.id
                 ? "border-accent text-foreground"
                 : "border-transparent text-gray-mid hover:text-foreground"
@@ -74,9 +82,9 @@ export function StageExplorer({ stages }: StageExplorerProps) {
             <p className="text-sm font-medium text-foreground">
               Archetypes that thrive here
             </p>
-            <ul className="mt-1 grid grid-cols-1 gap-3">
+            <ul className="mt-1 grid grid-cols-1">
             {archetypes.map((a) => (
-              <li key={a.id}>
+              <li key={a.id} className="-mt-px first:mt-0">
                 <Link
                   href={`/archetypes/${a.id}`}
                   className="block w-full border border-gray-light px-6 py-4 text-left text-base text-foreground transition-colors hover:border-gray-mid"
@@ -87,6 +95,16 @@ export function StageExplorer({ stages }: StageExplorerProps) {
               </li>
             ))}
           </ul>
+            {STAGE_LINKEDIN_URLS[selected.id] && (
+              <a
+                href={STAGE_LINKEDIN_URLS[selected.id]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 flex w-full items-center justify-center border border-foreground bg-foreground px-6 py-4 text-base font-medium text-background transition-colors hover:bg-background hover:text-foreground"
+              >
+                Explore Roles at This Stage
+              </a>
+            )}
           </div>
         </div>
       )}

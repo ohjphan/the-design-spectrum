@@ -15,12 +15,12 @@ export function QuestionCard({
 }: QuestionCardProps) {
   return (
     <div className="space-y-10">
-      <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+      <h2 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl lg:text-5xl">
         {questionText}
       </h2>
-      <ul className="grid gap-3 sm:grid-cols-1">
+      <ul className="grid sm:grid-cols-1">
         {options.map((opt) => (
-          <li key={opt.letter}>
+          <li key={opt.letter} className="-mt-px first:mt-0">
             <button
               type="button"
               onClick={() => onSelect(opt.letter)}

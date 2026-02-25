@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import type { ArchetypeResult } from "@/lib/types";
 import type { Archetype } from "@/lib/types";
 import { getArchetypeById } from "@/lib/data";
 import { stageFit, phaseFit } from "@/lib/data";
+import { STAGE_LINKEDIN_URLS } from "@/lib/linkedin-urls";
 
 type TabId = "strengths" | "risks" | "stage" | "phase" | "growth";
 
@@ -42,13 +44,13 @@ export function ResultTabs({ result }: ResultTabsProps) {
 
   return (
     <div className="space-y-8">
-      <nav className="flex flex-wrap gap-2 border-b border-gray-light pb-0">
+      <nav className="flex flex-nowrap gap-1 overflow-x-auto border-b border-gray-light pb-0 sm:gap-2">
         {TABS.map((tab) => (
           <button
             key={tab.id}
             type="button"
             onClick={() => setActiveTab(tab.id)}
-            className={`border-b-2 px-6 py-2 text-sm font-medium transition-colors ${
+            className={`shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
               activeTab === tab.id
                 ? "border-accent text-foreground"
                 : "border-transparent text-gray-mid hover:text-foreground"
@@ -92,10 +94,25 @@ export function ResultTabs({ result }: ResultTabsProps) {
               Where you tend to thrive: {dominant.bestCompanyStage.join(", ")}.
             </p>
             {stage && (
-              <div className="border border-gray-light px-6 py-4">
-                <p className="font-medium">{stage.label}</p>
-                <p className="mt-1 text-gray-mid">{stage.description}</p>
-              </div>
+              <>
+                <Link
+                  href={`/explore/company-stage?stage=${encodeURIComponent(stage.id)}`}
+                  className="block border border-gray-light px-6 py-4 text-foreground transition-colors hover:border-gray-mid"
+                >
+                  <p className="font-medium">{stage.label}</p>
+                  <p className="mt-1 text-gray-mid">{stage.description}</p>
+                </Link>
+                {STAGE_LINKEDIN_URLS[stage.id] && (
+                  <a
+                    href={STAGE_LINKEDIN_URLS[stage.id]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-full items-center justify-center border border-foreground bg-foreground px-6 py-4 text-base font-medium text-background transition-colors hover:bg-background hover:text-foreground"
+                  >
+                    Explore Roles at This Stage
+                  </a>
+                )}
+              </>
             )}
           </div>
         )}

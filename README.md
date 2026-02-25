@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Archetype Lab
 
-## Getting Started
+A lightweight, interactive micro-app that helps product designers discover their dominant design archetype and explore how different archetypes fit across company and project stages.
 
-First, run the development server:
+- **5-question diagnostic** — Answer 5 questions; no sign-up required.
+- **Archetype results** — See your dominant (or hybrid) archetype with strengths, risks, best company stage, and project phase.
+- **Education layer** — Explore which archetypes thrive at each company stage and project lifecycle phase.
+
+## Stack
+
+- Next.js (App Router), React, TypeScript
+- Tailwind CSS (Swiss Modernist theme: black, red accent, beige, grays)
+- Static JSON data (archetypes, questions, stage-fit, phase-fit); no backend
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — Start development server
+- `npm run build` — Production build
+- `npm run start` — Start production server
+- `npm run lint` — Run ESLint
+- `npm run test` — Run Vitest unit tests (scoring logic)
 
-## Learn More
+## Routes
 
-To learn more about Next.js, take a look at the following resources:
+- `/` — Landing; CTA to start quiz
+- `/quiz` — 5-question flow; redirects to results with `?s=A,B,C,D,E`
+- `/results` — Results (reads `?s=...` or shareable `?d=...&s=...`)
+- `/explore` — Company Stage + Project Phase
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Shareable results
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Results URLs can be shared: `/results?d=systems-thinker&s=strategic-partner` (dominant and optional secondary). Use “Copy result link” on the results page.

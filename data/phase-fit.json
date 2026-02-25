@@ -1,0 +1,38 @@
+[
+  {
+    "id": "discovery",
+    "label": "Discovery",
+    "description": "Understanding the problem and the user. Research and vision set direction.",
+    "archetypeIds": ["researcher", "visionary", "strategic-partner"]
+  },
+  {
+    "id": "concept",
+    "label": "Concept",
+    "description": "Shaping the solution and aligning stakeholders. Narrative and structure emerge.",
+    "archetypeIds": ["visionary", "systems-thinker", "strategic-partner"]
+  },
+  {
+    "id": "build",
+    "label": "Build",
+    "description": "Execution and coherence. Architecture and craft come to the fore.",
+    "archetypeIds": ["systems-thinker", "craft-purist", "design-operator"]
+  },
+  {
+    "id": "launch",
+    "label": "Launch",
+    "description": "Shipping and learning. Quality and clarity create trust.",
+    "archetypeIds": ["craft-purist", "growth-optimization", "design-operator"]
+  },
+  {
+    "id": "optimize",
+    "label": "Optimize",
+    "description": "Improving outcomes through experiments and iteration. Data and craft combine.",
+    "archetypeIds": ["growth-optimization", "researcher", "craft-purist"]
+  },
+  {
+    "id": "scale",
+    "label": "Scale",
+    "description": "Scaling the product and the org. Systems and process enable growth.",
+    "archetypeIds": ["systems-thinker", "design-operator", "strategic-partner"]
+  }
+]

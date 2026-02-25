@@ -1,0 +1,67 @@
+[
+  {
+    "id": "q1",
+    "questionText": "When you join a new project, what excites you most?",
+    "options": [
+      { "letter": "A", "archetypeId": "visionary", "text": "Clarifying what problem we should even be solving" },
+      { "letter": "B", "archetypeId": "systems-thinker", "text": "Mapping the ecosystem and structuring how everything fits together" },
+      { "letter": "C", "archetypeId": "growth-optimization", "text": "Improving a key metric through small, smart experiments" },
+      { "letter": "D", "archetypeId": "craft-purist", "text": "Elevating the experience so it feels polished and intentional" },
+      { "letter": "E", "archetypeId": "researcher", "text": "Talking to users to deeply understand their needs" },
+      { "letter": "F", "archetypeId": "design-operator", "text": "Fixing messy workflows and unclear processes on the team" },
+      { "letter": "G", "archetypeId": "strategic-partner", "text": "Shaping the roadmap and aligning stakeholders" }
+    ]
+  },
+  {
+    "id": "q2",
+    "questionText": "If a product is struggling, your instinct is to…",
+    "options": [
+      { "letter": "A", "archetypeId": "visionary", "text": "Revisit the core vision and value proposition" },
+      { "letter": "B", "archetypeId": "systems-thinker", "text": "Redesign the architecture or flows" },
+      { "letter": "C", "archetypeId": "growth-optimization", "text": "Analyze the funnel and run experiments" },
+      { "letter": "D", "archetypeId": "craft-purist", "text": "Improve usability and interaction clarity" },
+      { "letter": "E", "archetypeId": "researcher", "text": "Conduct research to uncover root causes" },
+      { "letter": "F", "archetypeId": "design-operator", "text": "Improve team coordination and delivery systems" },
+      { "letter": "G", "archetypeId": "strategic-partner", "text": "Reframe the problem with leadership" }
+    ]
+  },
+  {
+    "id": "q3",
+    "questionText": "Your superpower in meetings is…",
+    "options": [
+      { "letter": "A", "archetypeId": "visionary", "text": "Painting a compelling picture of what could exist" },
+      { "letter": "B", "archetypeId": "systems-thinker", "text": "Making complexity feel structured and solvable" },
+      { "letter": "C", "archetypeId": "growth-optimization", "text": "Connecting ideas to measurable impact" },
+      { "letter": "D", "archetypeId": "craft-purist", "text": "Noticing subtle UX issues others miss" },
+      { "letter": "E", "archetypeId": "researcher", "text": "Bringing in real user insight" },
+      { "letter": "F", "archetypeId": "design-operator", "text": "Clarifying roles, next steps, and process" },
+      { "letter": "G", "archetypeId": "strategic-partner", "text": "Influencing direction without authority" }
+    ]
+  },
+  {
+    "id": "q4",
+    "questionText": "You get most frustrated when…",
+    "options": [
+      { "letter": "A", "archetypeId": "visionary", "text": "There's no clear product vision" },
+      { "letter": "B", "archetypeId": "systems-thinker", "text": "The experience feels fragmented" },
+      { "letter": "C", "archetypeId": "growth-optimization", "text": "Decisions aren't backed by data" },
+      { "letter": "D", "archetypeId": "craft-purist", "text": "Quality gets sacrificed" },
+      { "letter": "E", "archetypeId": "researcher", "text": "Assumptions replace user insight" },
+      { "letter": "F", "archetypeId": "design-operator", "text": "Work feels chaotic and inefficient" },
+      { "letter": "G", "archetypeId": "strategic-partner", "text": "Strategy is disconnected from execution" }
+    ]
+  },
+  {
+    "id": "q5",
+    "questionText": "If you had to pick one long-term impact, it would be…",
+    "options": [
+      { "letter": "A", "archetypeId": "visionary", "text": "Launching a breakthrough product" },
+      { "letter": "B", "archetypeId": "systems-thinker", "text": "Designing a scalable, coherent system" },
+      { "letter": "C", "archetypeId": "growth-optimization", "text": "Building a high-performing growth engine" },
+      { "letter": "D", "archetypeId": "craft-purist", "text": "Raising the design quality bar" },
+      { "letter": "E", "archetypeId": "researcher", "text": "Creating a deep understanding of users" },
+      { "letter": "F", "archetypeId": "design-operator", "text": "Making the design org run smoothly" },
+      { "letter": "G", "archetypeId": "strategic-partner", "text": "Shaping company-level product strategy" }
+    ]
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "visionary",
+    "label": "Zero-to-One Visionary",
+    "emoji": "🧭",
+    "shortDescription": "You create what does not yet exist. You see possibility before structure and optimize for breakthrough value and direction-setting clarity.",
+    "strengths": [
+      "Identifies unmet needs early",
+      "Frames compelling product narratives",
+      "Creates momentum around ideas",
+      "Makes ambiguity feel energizing"
+    ],
+    "risks": [
+      "May move on before depth is achieved",
+      "Can underweight operational realities",
+      "May struggle in optimization-heavy environments"
+    ],
+    "bestCompanyStage": [
+      "Early-stage startups",
+      "New product bets",
+      "Innovation teams",
+      "AI frontier work"
+    ],
+    "bestProjectPhase": [
+      "Discovery",
+      "Concept",
+      "Strategic positioning"
+    ],
+    "growthPath": "Learning to stay long enough to see systems mature."
+  },
+  {
+    "id": "systems-thinker",
+    "label": "Systems Thinker (Experience Architect)",
+    "emoji": "🧪",
+    "shortDescription": "You bring coherence to complexity. You design for scalability, logical architecture, and long-term integrity.",
+    "strengths": [
+      "Designs platforms, not just features",
+      "Handles multi-role products well",
+      "Prevents fragmentation",
+      "Bridges product + engineering logic"
+    ],
+    "risks": [
+      "May over-structure too early",
+      "Can appear slow in scrappy contexts",
+      "May prioritize elegance over speed"
+    ],
+    "bestCompanyStage": [
+      "Series A–C companies",
+      "Ecosystem products",
+      "Developer tools",
+      "Multi-sided platforms"
+    ],
+    "bestProjectPhase": [
+      "Structuring v1",
+      "Cross-functional alignment",
+      "Technical integration work"
+    ],
+    "growthPath": "Balancing system integrity with rapid experimentation."
+  },
+  {
+    "id": "growth-optimization",
+    "label": "Growth & Optimization Designer",
+    "emoji": "📈",
+    "shortDescription": "You improve measurable outcomes. You see funnels, levers, and behavioral triggers and optimize for activation, retention, and conversion.",
+    "strengths": [
+      "Strong experimentation mindset",
+      "Comfortable with metrics",
+      "Turns insights into action quickly",
+      "Aligns closely with product + data"
+    ],
+    "risks": [
+      "May optimize locally vs systemically",
+      "Can deprioritize long-term vision",
+      "Less energized by undefined problems"
+    ],
+    "bestCompanyStage": [
+      "Post-PMF products",
+      "Consumer apps",
+      "Monetization phases",
+      "Mature growth engines"
+    ],
+    "bestProjectPhase": [
+      "Optimize",
+      "Launch",
+      "Scale"
+    ],
+    "growthPath": "Connecting experimentation to larger narrative and strategy."
+  },
+  {
+    "id": "craft-purist",
+    "label": "Craft Purist",
+    "emoji": "🧱",
+    "shortDescription": "You elevate quality and emotional resonance. You notice the subtlety others overlook and optimize for detail, clarity, and aesthetic integrity.",
+    "strengths": [
+      "Raises the design bar",
+      "Enhances trust through polish",
+      "Improves usability via micro-decisions",
+      "Protects brand perception"
+    ],
+    "risks": [
+      "May struggle in high-speed contexts",
+      "Can feel demoralized in low-maturity orgs",
+      "Risk of perfectionism"
+    ],
+    "bestCompanyStage": [
+      "Consumer brands",
+      "Design-led companies",
+      "Post-Series B polish phases"
+    ],
+    "bestProjectPhase": [
+      "Build",
+      "Launch",
+      "Polish and refinement"
+    ],
+    "growthPath": "Knowing when \"good enough\" creates more impact than perfect."
+  },
+  {
+    "id": "researcher",
+    "label": "Evidence-Driven Researcher",
+    "emoji": "🔬",
+    "shortDescription": "You understand before acting. You search for truth beneath assumptions and optimize for insight depth and validated learning.",
+    "strengths": [
+      "Prevents costly mistakes",
+      "Grounds decisions in reality",
+      "Identifies patterns across behaviors",
+      "Elevates team thinking"
+    ],
+    "risks": [
+      "May delay action",
+      "Can feel uncomfortable with intuition-based leaps",
+      "Risk of over-scoping research"
+    ],
+    "bestCompanyStage": [
+      "Early validation phases",
+      "Regulated industries",
+      "New market expansion"
+    ],
+    "bestProjectPhase": [
+      "Discovery",
+      "Concept",
+      "User research and validation"
+    ],
+    "growthPath": "Becoming comfortable with informed risk."
+  },
+  {
+    "id": "design-operator",
+    "label": "Design Operator",
+    "emoji": "🏗",
+    "shortDescription": "You make excellence repeatable. You see friction in systems—not just products—and optimize for consistency, workflow clarity, and scalable quality.",
+    "strengths": [
+      "Builds design infrastructure",
+      "Reduces chaos",
+      "Improves team velocity",
+      "Creates documentation clarity"
+    ],
+    "risks": [
+      "Can introduce process too early",
+      "May appear bureaucratic in small teams",
+      "Less drawn to speculative work"
+    ],
+    "bestCompanyStage": [
+      "Scaling orgs",
+      "Series B+",
+      "Cross-team complexity environments"
+    ],
+    "bestProjectPhase": [
+      "Build",
+      "Scale",
+      "Process and systems"
+    ],
+    "growthPath": "Balancing structure with creative freedom."
+  },
+  {
+    "id": "strategic-partner",
+    "label": "Embedded Strategic Partner",
+    "emoji": "🤝",
+    "shortDescription": "You influence product direction at a systemic level. You connect design to business strategy and optimize for alignment and long-term leverage.",
+    "strengths": [
+      "Influences without authority",
+      "Frames trade-offs well",
+      "Elevates design in leadership conversations",
+      "Connects craft to business impact"
+    ],
+    "risks": [
+      "May drift from hands-on craft",
+      "Dependent on org openness",
+      "Can over-index on influence vs output"
+    ],
+    "bestCompanyStage": [
+      "Matrixed orgs",
+      "Platform companies",
+      "Staff/Principal IC roles"
+    ],
+    "bestProjectPhase": [
+      "Concept",
+      "Cross-functional alignment",
+      "Strategy and roadmap"
+    ],
+    "growthPath": "Maintaining craft depth alongside strategic reach."
+  }
+]

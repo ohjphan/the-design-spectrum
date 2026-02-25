@@ -1,0 +1,66 @@
+[
+  {
+    "id": "pre-seed",
+    "label": "Pre-seed",
+    "description": "At this stage, companies need speed and vision to find product–market fit. Design often wears many hats.",
+    "companySize": "1–20",
+    "examples": [
+      "Early Figma (2013)",
+      "Early Notion (2014)",
+      "Early Linear",
+      "Early Loom",
+      "Early Vercel"
+    ],
+    "archetypeIds": ["visionary", "researcher", "craft-purist"]
+  },
+  {
+    "id": "series-a",
+    "label": "Series A",
+    "description": "Companies need coherence and alignment to scale early traction. Structure starts to matter.",
+    "companySize": "20–100",
+    "examples": [
+      "Linear (early growth phase)",
+      "Loom (early traction phase)",
+      "Airtable (early post-launch)",
+      "Webflow (early scale)",
+      "Retool (early expansion)"
+    ],
+    "archetypeIds": ["systems-thinker", "strategic-partner", "researcher"]
+  },
+  {
+    "id": "series-b",
+    "label": "Series B",
+    "description": "Growth and quality become priorities. Teams scale; consistency and optimization matter.",
+    "companySize": "100–500",
+    "examples": [
+      "Notion (mid-growth era)",
+      "Airtable (expansion phase)",
+      "Webflow (expansion phase)",
+      "Figma (pre-IPO growth stage)",
+      "Databricks (mid-scale phase)"
+    ],
+    "archetypeIds": ["growth-optimization", "design-operator", "craft-purist"]
+  },
+  {
+    "id": "scale",
+    "label": "Scale",
+    "description": "Ecosystem and platform thinking dominate. Process and systems enable velocity.",
+    "companySize": "500–5,000",
+    "examples": [
+      "Stripe",
+      "Snowflake (pre-IPO)",
+      "Airbnb (pre-IPO scale)",
+      "Datadog",
+      "Canva"
+    ],
+    "archetypeIds": ["systems-thinker", "design-operator", "strategic-partner"]
+  },
+  {
+    "id": "mature",
+    "label": "Mature",
+    "description": "Optimization, brand, and strategic influence. Design operates at multiple altitudes.",
+    "companySize": "5,000+",
+    "examples": ["Apple", "Microsoft", "Google", "Amazon", "Adobe"],
+    "archetypeIds": ["strategic-partner", "growth-optimization", "craft-purist"]
+  }
+]

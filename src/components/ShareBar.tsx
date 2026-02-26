@@ -87,7 +87,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
   };
 
   const buttonClass =
-    "inline-flex items-center justify-center gap-2 border border-foreground bg-background px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background";
+    "inline-flex items-center justify-center gap-2 border border-foreground bg-background px-4 py-3 sm:px-5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background";
 
   return (
     <div className="flex flex-wrap items-center justify-center gap-3">
@@ -99,7 +99,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label="Share on Twitter"
       >
         <TwitterIcon />
-        Twitter
+        <span className="hidden sm:inline">Twitter</span>
       </a>
       <a
         href={linkedInHref}
@@ -109,7 +109,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label="Share on LinkedIn"
       >
         <LinkedInIcon />
-        LinkedIn
+        <span className="hidden sm:inline">LinkedIn</span>
       </a>
       <button
         type="button"
@@ -118,7 +118,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label={copied ? "Link copied" : "Copy link"}
       >
         <LinkIcon />
-        {copied ? "Copied!" : "Copy link"}
+        <span className="hidden sm:inline">{copied ? "Copied!" : "Copy link"}</span>
       </button>
     </div>
   );

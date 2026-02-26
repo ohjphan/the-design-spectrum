@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: "Archetypes", href: "/archetypes" },
   { label: "Company Stage", href: "/explore/company-stage" },
   { label: "Project Phase", href: "/explore/project-lifecycle" },
+  { label: "About this project", href: "/about" },
 ];
 
 function MenuIcon({ open }: { open: boolean }) {
@@ -52,7 +53,7 @@ export function Header() {
       className="border-b border-gray-light bg-background"
       style={{ position: "sticky", top: 0, zIndex: 50 }}
     >
-      <div className="mx-auto flex max-w-[868px] items-center justify-between gap-6 px-6 py-4 sm:px-12 lg:px-16">
+      <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-6 py-4 sm:px-12 lg:px-16">
         <Link
           href="/"
           className="text-lg font-medium tracking-tight text-foreground"

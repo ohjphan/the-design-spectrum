@@ -163,14 +163,14 @@ export function ArchetypeRadarChart({ distribution }: ArchetypeRadarChartProps) 
               <g
                 key={id}
                 onClick={() => setSelectedId(selectedId === id ? null : id)}
-                className="cursor-pointer"
+                className="cursor-pointer group"
               >
                 <text
                   x={pos.x}
                   y={pos.y}
                   textAnchor={anchor}
                   dominantBaseline="middle"
-                  className="fill-foreground"
+                  className="fill-foreground transition-colors duration-150 group-hover:fill-accent"
                 >
                   {label}
                 </text>

@@ -1,64 +1,100 @@
 [
   {
     "id": "pre-seed",
-    "label": "Pre-seed",
-    "description": "At this stage, companies need speed and vision to find product–market fit. Design often wears many hats.",
-    "companySize": "1–20",
-    "examples": [
-      "Early Figma (2013)",
-      "Early Notion (2014)",
-      "Early Linear",
-      "Early Loom",
-      "Early Vercel"
+    "label": "Pre-Seed",
+    "description": "1–20 employees. Searching for product–market fit. Speed over polish.",
+    "advantages": [
+      "Direct impact on product direction",
+      "High autonomy and ownership",
+      "Rapid experimentation cycles",
+      "Broad exposure across functions"
     ],
+    "constraints": [
+      "Role ambiguity",
+      "Limited resources and infrastructure",
+      "Frequent strategic pivots",
+      "High uncertainty and volatility"
+    ],
+    "companySize": "1–20",
+    "examples": ["Early Figma (2013)", "Early Notion (2014)", "Early Linear", "Early Loom", "Early Vercel"],
     "archetypeIds": ["visionary", "researcher", "craft-purist"]
   },
   {
     "id": "series-a",
     "label": "Series A",
-    "description": "Companies need coherence and alignment to scale early traction. Structure starts to matter.",
-    "companySize": "20–100",
-    "examples": [
-      "Linear (early growth phase)",
-      "Loom (early traction phase)",
-      "Airtable (early post-launch)",
-      "Webflow (early scale)",
-      "Retool (early expansion)"
+    "description": "20–100 employees. Early traction. Building repeatability.",
+    "advantages": [
+      "Increasing product clarity",
+      "Growing role specialization",
+      "Strong growth momentum",
+      "Foundational systems taking shape"
     ],
+    "constraints": [
+      "Fragmentation risk",
+      "Immature processes",
+      "Speed vs. cohesion tension",
+      "Rapidly shifting expectations"
+    ],
+    "companySize": "20–100",
+    "examples": ["Linear (early growth phase)", "Loom (early traction phase)", "Airtable (early post-launch)", "Webflow (early scale)", "Retool (early expansion)"],
     "archetypeIds": ["systems-thinker", "strategic-partner", "researcher"]
   },
   {
     "id": "series-b",
     "label": "Series B",
-    "description": "Growth and quality become priorities. Teams scale; consistency and optimization matter.",
-    "companySize": "100–500",
-    "examples": [
-      "Notion (mid-growth era)",
-      "Airtable (expansion phase)",
-      "Webflow (expansion phase)",
-      "Figma (pre-IPO growth stage)",
-      "Databricks (mid-scale phase)"
+    "description": "100–300 employees. Scaling product, revenue, and organization.",
+    "advantages": [
+      "Investment in tools and talent",
+      "Clearer market positioning",
+      "Functional team depth",
+      "Platform-level thinking"
     ],
+    "constraints": [
+      "Cross-team coordination complexity",
+      "Accumulating system debt",
+      "Innovation vs. consistency tension",
+      "Cultural growing pains"
+    ],
+    "companySize": "100–300",
+    "examples": ["Notion (mid-growth era)", "Airtable (expansion phase)", "Webflow (expansion phase)", "Figma (pre-IPO growth stage)", "Databricks (mid-scale phase)"],
     "archetypeIds": ["growth-optimization", "design-operator", "craft-purist"]
   },
   {
     "id": "scale",
     "label": "Scale",
-    "description": "Ecosystem and platform thinking dominate. Process and systems enable velocity.",
-    "companySize": "500–5,000",
-    "examples": [
-      "Stripe",
-      "Snowflake (pre-IPO)",
-      "Airbnb (pre-IPO scale)",
-      "Datadog",
-      "Canva"
+    "description": "300–2,000+ employees. Series C+ / Pre-IPO. Operating at significant scale. Preparing for durability.",
+    "advantages": [
+      "Operational maturity",
+      "Established cross-functional infrastructure",
+      "Strong brand credibility",
+      "Portfolio-level strategy"
     ],
+    "constraints": [
+      "Slower decision cycles",
+      "Silo formation risk",
+      "Alignment overhead",
+      "Reduced experimentation velocity"
+    ],
+    "companySize": "300–2,000+",
+    "examples": ["Stripe", "Snowflake (pre-IPO)", "Airbnb (pre-IPO scale)", "Datadog", "Canva"],
     "archetypeIds": ["systems-thinker", "design-operator", "strategic-partner"]
   },
   {
     "id": "mature",
     "label": "Mature",
-    "description": "Optimization, brand, and strategic influence. Design operates at multiple altitudes.",
+    "description": "Public / Global Enterprise. Global scale. Layered governance.",
+    "advantages": [
+      "Deep financial and talent resources",
+      "High brand trust",
+      "Predictable execution systems",
+      "Long-term strategic investment capacity"
+    ],
+    "constraints": [
+      "Legacy systems and processes",
+      "Multi-layered decision-making",
+      "Lower risk tolerance",
+      "Distance from end users"
+    ],
     "companySize": "5,000+",
     "examples": ["Apple", "Microsoft", "Google", "Amazon", "Adobe"],
     "archetypeIds": ["strategic-partner", "growth-optimization", "craft-purist"]

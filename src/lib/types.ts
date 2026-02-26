@@ -12,11 +12,22 @@ export interface Archetype {
   label: string;
   shortDescription: string;
   emoji?: string;
-  strengths: string[];
-  risks: string[];
+  /** Legacy; used when strengthsPoints is not set. */
+  strengths?: string[];
+  /** Legacy; used when risksPoints is not set. */
+  risks?: string[];
+  /** Structured strengths: intro + list of title/description points. */
+  strengthsPoints?: { title: string; description: string }[];
+  /** Structured risks: intro + list of title/description points. */
+  risksPoints?: { title: string; description: string }[];
   bestCompanyStage: string[];
   bestProjectPhase: string[];
-  growthPath: string;
+  /** Legacy single-line growth path; used when growthPathPoints is not set. */
+  growthPath?: string;
+  /** Structured growth path: intro line + list of title/description points. */
+  growthPathPoints?: { title: string; description: string }[];
+  /** Tips for managers: intro + list of title/description points. */
+  tipsForManagersPoints?: { title: string; description: string }[];
   icon?: string;
 }
 
@@ -36,6 +47,8 @@ export interface StageFit {
   id: string;
   label: string;
   description: string;
+  advantages?: string[];
+  constraints?: string[];
   companySize?: string;
   examples?: string[];
   archetypeIds: ArchetypeId[];

@@ -59,7 +59,7 @@ export function QuizFlow({ questions }: QuizFlowProps) {
   if (!currentQuestion) return null;
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-4">
       <ProgressBar current={step + 1} total={questions.length} />
       <QuestionCard
         questionText={currentQuestion.questionText}

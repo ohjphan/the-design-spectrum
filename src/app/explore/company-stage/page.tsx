@@ -17,7 +17,7 @@ export default async function CompanyStagePage({
 
   return (
     <div className="min-h-screen bg-background">
-      <main className="mx-auto max-w-[868px] px-6 py-12 sm:px-12 lg:px-16">
+      <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
         <StageExplorer stages={stageFit} initialStageId={initialStageId} />
       </main>
     </div>

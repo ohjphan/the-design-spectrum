@@ -34,13 +34,9 @@ export function ResultHero({
     description = dominant.shortDescription;
   }
 
-  const showEmoji =
-    dominant.emoji && variant !== "detail" && !isAdaptiveGeneralist;
-
   return (
     <header className="space-y-4">
       <h1 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl lg:text-[68px]">
-        {showEmoji && <span className="block">{dominant.emoji}</span>}
         {title}
       </h1>
       <p className="max-w-2xl text-lg text-gray-mid">{description}</p>

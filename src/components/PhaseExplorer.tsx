@@ -7,11 +7,18 @@ import { getArchetypesByIds } from "@/lib/data";
 
 interface PhaseExplorerProps {
   phases: PhaseFit[];
+  /** When provided (e.g. from ?phase= in URL), open this tab on load. */
+  initialPhaseId?: string;
 }
 
-export function PhaseExplorer({ phases }: PhaseExplorerProps) {
+export function PhaseExplorer({
+  phases,
+  initialPhaseId,
+}: PhaseExplorerProps) {
   const [activeId, setActiveId] = useState<string>(
-    phases[0]?.id ?? ""
+    initialPhaseId && phases.some((p) => p.id === initialPhaseId)
+      ? initialPhaseId
+      : phases[0]?.id ?? ""
   );
   const selected = phases.find((p) => p.id === activeId);
   const archetypes = selected
@@ -53,12 +60,10 @@ export function PhaseExplorer({ phases }: PhaseExplorerProps) {
             <p className="mt-1 text-gray-mid">{selected.description}</p>
           </div>
           <div>
-            <p className="text-sm font-medium text-foreground">
-              Archetypes that shine here
-            </p>
-            <ul className="mt-1 grid grid-cols-1 gap-3">
+            <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Archetypes that shine here</p>
+            <ul className="grid grid-cols-1 gap-0">
             {archetypes.map((a) => (
-              <li key={a.id}>
+              <li key={a.id} className="-mt-px first:mt-0">
                 <Link
                   href={`/archetypes/${a.id}`}
                   className="block w-full border border-gray-light px-6 py-4 text-left text-base text-foreground transition-colors hover:border-gray-mid"

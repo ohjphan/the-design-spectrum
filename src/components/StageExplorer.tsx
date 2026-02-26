@@ -55,23 +55,33 @@ export function StageExplorer({
       {selected && (
         <div className="space-y-8">
           <div>
-            <h3 className="text-lg font-medium text-foreground">{selected.label}</h3>
-            <p className="mt-1 text-gray-mid">{selected.description}</p>
+            <h3 className="text-lg font-medium text-foreground">About</h3>
+            <p className="mt-1 whitespace-pre-line text-gray-mid">{selected.description}</p>
           </div>
-          {selected.companySize && (
+          {selected.advantages && selected.advantages.length > 0 && (
             <div>
-              <p className="text-sm font-medium text-foreground">
-                Company size
-              </p>
-              <p className="mt-1 text-gray-mid">{selected.companySize} employees</p>
+              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Advantages</p>
+              <ul className="list-inside list-disc text-gray-mid">
+                {selected.advantages.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {selected.constraints && selected.constraints.length > 0 && (
+            <div>
+              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Constraints</p>
+              <ul className="list-inside list-disc text-gray-mid">
+                {selected.constraints.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
           )}
           {selected.examples && selected.examples.length > 0 && (
             <div>
-              <p className="text-sm font-medium text-foreground">
-                Examples
-              </p>
-              <ul className="mt-1 list-inside list-disc text-gray-mid">
+              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Examples</p>
+              <ul className="list-inside list-disc text-gray-mid">
                 {selected.examples.map((company) => (
                   <li key={company}>{company}</li>
                 ))}
@@ -79,10 +89,8 @@ export function StageExplorer({
             </div>
           )}
           <div>
-            <p className="text-sm font-medium text-foreground">
-              Archetypes that thrive here
-            </p>
-            <ul className="mt-1 grid grid-cols-1">
+            <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Archetypes that thrive here</p>
+            <ul className="grid grid-cols-1">
             {archetypes.map((a) => (
               <li key={a.id} className="-mt-px first:mt-0">
                 <Link
@@ -102,7 +110,7 @@ export function StageExplorer({
                 rel="noopener noreferrer"
                 className="mt-6 flex w-full items-center justify-center border border-foreground bg-foreground px-6 py-4 text-base font-medium text-background transition-colors hover:bg-background hover:text-foreground"
               >
-                Explore Roles at This Stage
+                Explore roles in this stage
               </a>
             )}
           </div>

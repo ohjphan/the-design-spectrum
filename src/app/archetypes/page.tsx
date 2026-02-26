@@ -4,7 +4,7 @@ import { archetypes } from "@/lib/data";
 export default function ArchetypesPage() {
   return (
     <div className="min-h-screen bg-background">
-      <main className="mx-auto max-w-[868px] px-6 py-12 sm:px-12 lg:px-16">
+      <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
         <h1 className="mb-10 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
           7 Design Archetypes
         </h1>

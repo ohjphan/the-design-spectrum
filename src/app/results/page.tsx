@@ -60,7 +60,7 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
     if (!decoded) {
       return (
         <div className="min-h-screen bg-background px-6 py-24">
-          <main className="mx-auto max-w-[868px]">
+          <main className="mx-auto max-w-3xl">
             <p className="text-gray-mid">
               No results.{" "}
               <Link href="/quiz" className="text-accent hover:underline">
@@ -114,7 +114,7 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
 
   return (
     <div className="min-h-screen bg-background pb-24">
-      <main className="mx-auto max-w-[868px] px-6 py-12 sm:px-12 lg:px-16">
+      <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
         <div className="space-y-16">
           <ResultHero
             dominant={dominant}
@@ -122,7 +122,7 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
             isHybrid={result.isHybrid}
             isAdaptiveGeneralist={result.isAdaptiveGeneralist}
           />
-          <div className="-mt-10 mb-2">
+          <div className="-mt-20 mb-2">
             <ArchetypeRadarChart distribution={result.distribution} />
           </div>
           <ResultTabs result={result} />
@@ -133,7 +133,7 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
         className="fixed bottom-0 left-0 right-0 z-30 border-t border-gray-light bg-background py-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
         aria-label="Results actions"
       >
-        <div className="mx-auto flex max-w-[868px] justify-center px-6 sm:px-12 lg:px-16">
+        <div className="mx-auto flex max-w-3xl justify-center px-6 sm:px-12 lg:px-16">
           <ShareBar shareUrl={resultsPath} fullUrl={fullShareUrl} />
         </div>
       </footer>

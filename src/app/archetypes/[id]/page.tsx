@@ -37,7 +37,7 @@ export default async function ArchetypeDetailPage({
 
   return (
     <div className="min-h-screen bg-background">
-      <main className="mx-auto max-w-[868px] px-6 py-12 sm:px-12 lg:px-16">
+      <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
         <div className="space-y-16">
           <ResultHero
             dominant={archetype}

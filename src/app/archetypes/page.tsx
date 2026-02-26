@@ -5,7 +5,7 @@ export default function ArchetypesPage() {
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
-        <h1 className="mb-10 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
+        <h1 className="font-heading mb-10 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
           7 Design Archetypes
         </h1>
 
@@ -16,7 +16,7 @@ export default function ArchetypesPage() {
                 href={`/archetypes/${archetype.id}`}
                 className="block border border-gray-light bg-background px-6 py-6 transition-colors hover:border-foreground"
               >
-                <h2 className="text-lg font-medium text-foreground">
+                <h2 className="font-heading text-lg font-medium text-foreground">
                   {archetype.emoji && <span>{archetype.emoji} </span>}
                   {archetype.label}
                 </h2>

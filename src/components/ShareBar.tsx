@@ -99,7 +99,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label="Share on Twitter"
       >
         <TwitterIcon />
-        <span className="hidden sm:inline">Twitter</span>
+        <span className="hidden sm:inline">Twitter →</span>
       </a>
       <a
         href={linkedInHref}
@@ -109,7 +109,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label="Share on LinkedIn"
       >
         <LinkedInIcon />
-        <span className="hidden sm:inline">LinkedIn</span>
+        <span className="hidden sm:inline">LinkedIn →</span>
       </a>
       <button
         type="button"
@@ -118,7 +118,7 @@ export function ShareBar({ shareUrl, fullUrl: fullUrlProp, shareText }: ShareBar
         aria-label={copied ? "Link copied" : "Copy link"}
       >
         <LinkIcon />
-        <span className="hidden sm:inline">{copied ? "Copied!" : "Copy link"}</span>
+        <span className="hidden sm:inline">{copied ? "Copied!" : "Copy link →"}</span>
       </button>
     </div>
   );

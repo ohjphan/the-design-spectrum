@@ -58,31 +58,50 @@ export function QuizFlow({ questions }: QuizFlowProps) {
 
   if (!currentQuestion) return null;
 
+  const isLastStep = step === questions.length - 1;
+  const showBack = step > 0;
+  const showSeeResults = isLastStep;
+  const showFooter = showBack || showSeeResults;
+
   return (
-    <div className="space-y-4">
-      <ProgressBar current={step + 1} total={questions.length} />
-      <QuestionCard
-        questionText={currentQuestion.questionText}
-        options={currentQuestion.options}
-        selectedLetter={selectedLetter}
-        onSelect={handleSelect}
-      />
-      <div className="flex gap-4">
-        {step > 0 && (
-          <Button variant="secondary" onClick={handleBack}>
-            Back
-          </Button>
-        )}
-        {step === questions.length - 1 && (
-          <Button
-            variant="primary"
-            onClick={handleSeeResults}
-            disabled={!selectedLetter}
-          >
-            See results
-          </Button>
-        )}
+    <>
+      <div className={`space-y-4 ${showFooter ? "pb-24" : ""}`}>
+        <ProgressBar current={step + 1} total={questions.length} />
+        <QuestionCard
+          questionText={currentQuestion.questionText}
+          options={currentQuestion.options}
+          selectedLetter={selectedLetter}
+          onSelect={handleSelect}
+        />
       </div>
-    </div>
+
+      {showFooter && (
+        <footer
+          className="fixed bottom-0 left-0 right-0 z-30 border-t border-gray-light bg-background py-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
+          aria-label="Quiz actions"
+        >
+          <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-6 sm:px-12 lg:px-16">
+            <div className="min-w-0 flex-1">
+              {showBack && (
+                <Button variant="secondary" onClick={handleBack}>
+                  ← Back
+                </Button>
+              )}
+            </div>
+            <div className="flex shrink-0">
+              {showSeeResults && (
+                <Button
+                  variant="primary"
+                  onClick={handleSeeResults}
+                  disabled={!selectedLetter}
+                >
+                  See results →
+                </Button>
+              )}
+            </div>
+          </div>
+        </footer>
+      )}
+    </>
   );
 }

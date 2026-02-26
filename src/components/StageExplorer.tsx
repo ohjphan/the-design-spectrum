@@ -28,7 +28,7 @@ export function StageExplorer({
 
   return (
     <div className="space-y-8">
-      <h2 className="text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
+      <h2 className="font-heading text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
         Company Stage
       </h2>
       <p className="max-w-2xl text-gray-mid">
@@ -41,7 +41,7 @@ export function StageExplorer({
             key={stage.id}
             type="button"
             onClick={() => setActiveId(stage.id)}
-            className={`shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
+            className={`font-heading shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
               activeId === stage.id
                 ? "border-accent text-foreground"
                 : "border-transparent text-gray-mid hover:text-foreground"
@@ -55,12 +55,12 @@ export function StageExplorer({
       {selected && (
         <div className="space-y-8">
           <div>
-            <h3 className="text-lg font-medium text-foreground">About</h3>
+            <h3 className="font-heading text-lg font-medium text-foreground">About</h3>
             <p className="mt-1 whitespace-pre-line text-gray-mid">{selected.description}</p>
           </div>
           {selected.advantages && selected.advantages.length > 0 && (
             <div>
-              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Advantages</p>
+              <p className="font-heading mb-3 text-lg font-medium tracking-tight text-foreground">Advantages</p>
               <ul className="list-inside list-disc text-gray-mid">
                 {selected.advantages.map((item) => (
                   <li key={item}>{item}</li>
@@ -70,7 +70,7 @@ export function StageExplorer({
           )}
           {selected.constraints && selected.constraints.length > 0 && (
             <div>
-              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Constraints</p>
+              <p className="font-heading mb-3 text-lg font-medium tracking-tight text-foreground">Constraints</p>
               <ul className="list-inside list-disc text-gray-mid">
                 {selected.constraints.map((item) => (
                   <li key={item}>{item}</li>
@@ -80,7 +80,7 @@ export function StageExplorer({
           )}
           {selected.examples && selected.examples.length > 0 && (
             <div>
-              <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Examples</p>
+              <p className="font-heading mb-3 text-lg font-medium tracking-tight text-foreground">Examples</p>
               <ul className="list-inside list-disc text-gray-mid">
                 {selected.examples.map((company) => (
                   <li key={company}>{company}</li>
@@ -89,7 +89,7 @@ export function StageExplorer({
             </div>
           )}
           <div>
-            <p className="mb-3 text-lg font-medium tracking-tight text-foreground">Archetypes that thrive here</p>
+            <p className="font-heading mb-3 text-lg font-medium tracking-tight text-foreground">Archetypes that thrive here</p>
             <ul className="grid grid-cols-1">
             {archetypes.map((a) => (
               <li key={a.id} className="-mt-px first:mt-0">
@@ -110,7 +110,7 @@ export function StageExplorer({
                 rel="noopener noreferrer"
                 className="mt-6 flex w-full items-center justify-center border border-foreground bg-foreground px-6 py-4 text-base font-medium text-background transition-colors hover:bg-background hover:text-foreground"
               >
-                Explore roles in this stage
+                Explore roles in this stage →
               </a>
             )}
           </div>

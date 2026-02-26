@@ -5,39 +5,30 @@
     "emoji": "🧭",
     "shortDescription": "You create what does not yet exist. You see possibility before structure and optimize for breakthrough value and direction-setting clarity.",
     "strengthsPoints": [
-      { "title": "Future Framing", "description": "You see possibilities before they're obvious. You clarify what should exist when others are still reacting." },
-      { "title": "Momentum Creation", "description": "Your energy pulls teams out of ambiguity. You make bold ideas feel achievable." },
-      { "title": "Problem Reframing", "description": "You challenge assumptions and redefine the starting point. This often unlocks breakthrough direction." },
-      { "title": "Narrative Clarity", "description": "You articulate vision in ways that inspire alignment and belief." }
+      { "title": "Future Framing", "description": "You see what could exist before it's obvious to others." },
+      { "title": "Momentum Creation", "description": "You energize teams around bold direction." },
+      { "title": "Problem Reframing", "description": "You challenge assumptions and redefine the starting point." },
+      { "title": "Narrative Clarity", "description": "You articulate compelling product vision." }
     ],
     "risksPoints": [
-      { "title": "Idea Over-Rotation", "description": "You may move toward the next concept before the current one matures." },
-      { "title": "Constraint Friction", "description": "Operational realities can feel limiting rather than enabling." },
-      { "title": "Underweighting Iteration", "description": "You may undervalue incremental refinement in favor of step-change thinking." },
-      { "title": "Execution Gaps", "description": "Without strong partners, vision can outpace delivery." }
+      { "title": "Idea Drift", "description": "You may move on before ideas fully mature." },
+      { "title": "Constraint Friction", "description": "Operational realities can feel limiting." },
+      { "title": "Underweighting Iteration", "description": "Incremental refinement may feel less exciting." },
+      { "title": "Execution Gaps", "description": "Vision can outpace delivery without strong partners." }
     ],
-    "bestCompanyStage": [
-      "Early-stage startups",
-      "New product bets",
-      "Innovation teams",
-      "AI frontier work"
-    ],
-    "bestProjectPhase": [
-      "Discovery",
-      "Concept",
-      "Strategic positioning"
-    ],
+    "bestCompanyStage": ["Early-stage startups", "New product bets", "Innovation teams", "AI frontier work"],
+    "bestProjectPhase": ["Discovery", "Concept", "Strategic positioning"],
     "growthPathPoints": [
-      { "title": "Depth & Follow-Through", "description": "Stay with ideas long enough to refine, ship, and iterate. Compounding impact comes from sustained execution, not just bold beginnings." },
-      { "title": "Systems Awareness", "description": "Zoom out from the concept to the architecture. Strong ideas endure when they're structurally sound." },
-      { "title": "Operational Fluency", "description": "Develop comfort with constraints, trade-offs, and delivery mechanics. Vision accelerates when grounded in reality." },
-      { "title": "Evidence Calibration", "description": "Balance instinct with validation. Knowing when to test — and how — sharpens strategic credibility." }
+      { "title": "Depth Discipline", "description": "Stay long enough to compound impact." },
+      { "title": "Systems Thinking", "description": "Strengthen structural awareness early." },
+      { "title": "Operational Fluency", "description": "Embrace constraints as creative inputs." },
+      { "title": "Measured Validation", "description": "Tie bold ideas to clear experiments." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Give Them Strategic Problems, Not Just Tasks", "description": "You thrive when shaping direction. Assign ambiguous, high-leverage challenges — not incremental maintenance work." },
-      { "title": "Pair Vision with Strong Executors", "description": "Complement you with delivery-focused partners to ensure ideas mature into outcomes." },
-      { "title": "Clarify Constraints Early", "description": "Frame boundaries clearly so creativity stays grounded and productive." },
-      { "title": "Measure Progress, Not Just Ideas", "description": "Encourage follow-through by defining what success looks like beyond ideation." }
+      { "title": "Assign Strategic Problems", "description": "Give you ambiguity to shape." },
+      { "title": "Pair with Executors", "description": "Complement vision with delivery strength." },
+      { "title": "Clarify Boundaries", "description": "Define constraints early." },
+      { "title": "Define Success Clearly", "description": "Align vision with outcomes." }
     ]
   },
   {
@@ -46,39 +37,30 @@
     "emoji": "🧪",
     "shortDescription": "You bring coherence to complexity as an experience architect. You design for scalability, logical architecture, and long-term integrity.",
     "strengthsPoints": [
-      { "title": "Architectural Clarity", "description": "You bring coherence to complex ecosystems. Fragmentation rarely survives your scrutiny." },
-      { "title": "Scalable Design", "description": "You think beyond features toward platforms, flows, and long-term integrity." },
-      { "title": "Cross-Functional Translation", "description": "You bridge product, engineering, and design with structural logic." },
-      { "title": "Dependency Awareness", "description": "You anticipate second- and third-order effects others miss." }
+      { "title": "Architectural Clarity", "description": "You design for scale and cohesion." },
+      { "title": "Dependency Awareness", "description": "You anticipate downstream impact." },
+      { "title": "Cross-Functional Translation", "description": "You bridge product and engineering logic." },
+      { "title": "Platform Thinking", "description": "You think beyond features to ecosystems." }
     ],
     "risksPoints": [
-      { "title": "Over-Structuring Early", "description": "You may design for scale before value is fully validated." },
-      { "title": "Analysis Stall", "description": "Complexity can lead to hesitation rather than motion." },
-      { "title": "Perfection of Frameworks", "description": "You may refine systems beyond what the moment requires." },
+      { "title": "Over-Structuring Early", "description": "You may design for scale before validation." },
+      { "title": "Analysis Stall", "description": "Complexity can slow decision-making." },
+      { "title": "Framework Over-Refinement", "description": "Structure may exceed what's needed now." },
       { "title": "Reduced Agility", "description": "Rapid pivots can feel destabilizing." }
     ],
-    "bestCompanyStage": [
-      "Series A–C companies",
-      "Ecosystem products",
-      "Developer tools",
-      "Multi-sided platforms"
-    ],
-    "bestProjectPhase": [
-      "Structuring v1",
-      "Cross-functional alignment",
-      "Technical integration work"
-    ],
+    "bestCompanyStage": ["Series A–C companies", "Ecosystem products", "Developer tools", "Multi-sided platforms"],
+    "bestProjectPhase": ["Structuring v1", "Cross-functional alignment", "Technical integration work"],
     "growthPathPoints": [
-      { "title": "Bias Toward Action", "description": "Not every structure needs full definition before testing. Momentum often clarifies what architecture cannot." },
-      { "title": "Narrative Influence", "description": "Translate complex systems into compelling stories. Structure persuades more effectively when it's human." },
-      { "title": "Comfort with Imperfection", "description": "Allow temporary inconsistency when speed matters. Coherence can evolve over time." },
-      { "title": "Growth Sensitivity", "description": "Deepen your understanding of metrics and behavioral outcomes. Systems must not only scale — they must perform." }
+      { "title": "Bias Toward Action", "description": "Prototype structure before perfecting it." },
+      { "title": "Narrative Influence", "description": "Tell the story behind the system." },
+      { "title": "Iterative Structuring", "description": "Let coherence evolve over time." },
+      { "title": "Performance Sensitivity", "description": "Connect systems to measurable outcomes." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Involve Them Early in Structural Decisions", "description": "Bring you into roadmap and platform conversations before fragmentation occurs." },
-      { "title": "Set Scope Boundaries", "description": "Prevent over-architecting by defining what level of system maturity is required now." },
-      { "title": "Encourage Iterative Structuring", "description": "Reinforce that systems can evolve. Not everything must be fully resolved at once." },
-      { "title": "Recognize Invisible Impact", "description": "Much of your value is preventative. Acknowledge coherence and scalability wins." }
+      { "title": "Involve You Early", "description": "Bring you into architecture conversations." },
+      { "title": "Set Scope Boundaries", "description": "Define how much structure is required." },
+      { "title": "Encourage Iteration", "description": "Reinforce that systems can mature gradually." },
+      { "title": "Acknowledge Structural Wins", "description": "Recognize preventative impact." }
     ]
   },
   {
@@ -87,39 +69,30 @@
     "emoji": "📈",
     "shortDescription": "You improve measurable outcomes. You see funnels, levers, and behavioral triggers and optimize for activation, retention, and conversion.",
     "strengthsPoints": [
-      { "title": "Metric Fluency", "description": "You understand how design decisions influence measurable outcomes." },
+      { "title": "Metric Fluency", "description": "You connect design decisions to measurable impact." },
       { "title": "Experimentation Discipline", "description": "You iterate quickly and learn systematically." },
-      { "title": "Friction Detection", "description": "You identify where users drop off and why." },
-      { "title": "Performance Alignment", "description": "You keep product decisions tied to business impact." }
+      { "title": "Friction Detection", "description": "You identify where users drop off." },
+      { "title": "Outcome Alignment", "description": "You keep product tied to performance." }
     ],
     "risksPoints": [
-      { "title": "Local Optimization", "description": "You may improve a funnel while weakening the broader experience." },
-      { "title": "Short-Term Bias", "description": "Immediate wins can overshadow long-term positioning." },
+      { "title": "Local Optimization", "description": "Funnel gains may weaken the broader system." },
+      { "title": "Short-Term Bias", "description": "Immediate wins can overshadow positioning." },
       { "title": "Metric Tunnel Vision", "description": "Not everything valuable is measurable." },
-      { "title": "Reduced Comfort with Ambiguity", "description": "Undefined problems may feel less energizing." }
+      { "title": "Ambiguity Avoidance", "description": "Undefined problems may feel less energizing." }
     ],
-    "bestCompanyStage": [
-      "Post-PMF products",
-      "Consumer apps",
-      "Monetization phases",
-      "Mature growth engines"
-    ],
-    "bestProjectPhase": [
-      "Optimize",
-      "Launch",
-      "Scale"
-    ],
+    "bestCompanyStage": ["Post-PMF products", "Consumer apps", "Monetization phases", "Mature growth engines"],
+    "bestProjectPhase": ["Optimize", "Launch", "Scale"],
     "growthPathPoints": [
-      { "title": "Strategic Horizon", "description": "Move beyond metrics to product positioning and long-term differentiation. Optimization gains power when tied to vision." },
-      { "title": "Ecosystem Thinking", "description": "Consider how experiments impact the broader product experience. Local wins should not create systemic friction." },
-      { "title": "Discovery Confidence", "description": "Practice leading ambiguous problem framing, not just measurable improvements. Early clarity multiplies later growth." },
-      { "title": "Craft Elevation", "description": "Refine aesthetic and experiential nuance. Emotional resonance amplifies performance." }
+      { "title": "Strategic Expansion", "description": "Think beyond metrics to positioning." },
+      { "title": "Ecosystem Awareness", "description": "Consider second-order effects." },
+      { "title": "Discovery Confidence", "description": "Lead early-stage ambiguity." },
+      { "title": "Craft Elevation", "description": "Refine emotional and aesthetic nuance." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Tie Design to Clear Metrics", "description": "Provide measurable goals and access to data. You operate best with feedback loops." },
-      { "title": "Expand Your Strategic Exposure", "description": "Invite you into positioning and roadmap discussions to broaden your horizon beyond optimization." },
-      { "title": "Encourage System Awareness", "description": "Help you see second-order effects of experiments across the experience." },
-      { "title": "Reward Learning Velocity", "description": "Celebrate disciplined experimentation, not just metric wins." }
+      { "title": "Define Clear Metrics", "description": "Provide strong feedback loops." },
+      { "title": "Expand Context", "description": "Include you in strategic conversations." },
+      { "title": "Discuss Trade-Offs", "description": "Explore system-wide impact." },
+      { "title": "Reward Learning", "description": "Value disciplined experimentation." }
     ]
   },
   {
@@ -128,38 +101,30 @@
     "emoji": "🧱",
     "shortDescription": "You elevate quality and emotional resonance. You notice the subtlety others overlook and optimize for detail, clarity, and aesthetic integrity.",
     "strengthsPoints": [
-      { "title": "Detail Sensitivity", "description": "You notice nuance others overlook — spacing, tone, motion, clarity." },
-      { "title": "Emotional Precision", "description": "You elevate trust and resonance through thoughtful execution." },
-      { "title": "Quality Elevation", "description": "You raise the bar for what \"good\" looks like." },
+      { "title": "Detail Sensitivity", "description": "You notice nuance others miss." },
+      { "title": "Emotional Precision", "description": "You elevate trust through execution." },
+      { "title": "Quality Elevation", "description": "You raise the standard of \"good.\"" },
       { "title": "Brand Integrity", "description": "You protect coherence across touchpoints." }
     ],
     "risksPoints": [
-      { "title": "Perfection Drag", "description": "You may delay progress in pursuit of polish." },
-      { "title": "Speed Friction", "description": "Rapid environments can feel misaligned with your standards." },
-      { "title": "Over-Indexing on Aesthetics", "description": "Strategic trade-offs may feel like compromises." },
-      { "title": "Personal Attachment", "description": "Craft investment can make feedback harder to absorb." }
+      { "title": "Perfection Drag", "description": "Progress may slow in pursuit of polish." },
+      { "title": "Speed Friction", "description": "Fast-moving environments can feel misaligned." },
+      { "title": "Aesthetic Over-Indexing", "description": "Trade-offs may feel like compromises." },
+      { "title": "Personal Attachment", "description": "Feedback can feel personal." }
     ],
-    "bestCompanyStage": [
-      "Consumer brands",
-      "Design-led companies",
-      "Post-Series B polish phases"
-    ],
-    "bestProjectPhase": [
-      "Build",
-      "Launch",
-      "Polish and refinement"
-    ],
+    "bestCompanyStage": ["Consumer brands", "Design-led companies", "Post-Series B polish phases"],
+    "bestProjectPhase": ["Build", "Launch", "Polish and refinement"],
     "growthPathPoints": [
-      { "title": "Speed Under Constraint", "description": "Define what high quality means for this stage. Precision and velocity can coexist." },
-      { "title": "Metric Fluency", "description": "Understand how design detail influences activation, trust, and retention. Craft becomes strategic when measurable." },
-      { "title": "Influence Without Friction", "description": "Advocate for excellence in ways that align, not alienate. Elevation requires coalition-building." },
-      { "title": "Systems Literacy", "description": "Design for scale, not just perfection. Craft at the system level compounds across teams." }
+      { "title": "Calibrated Quality", "description": "Define excellence for this stage." },
+      { "title": "Metric Connection", "description": "Link craft to business impact." },
+      { "title": "Influence Skills", "description": "Advocate without alienating." },
+      { "title": "System-Level Design", "description": "Scale quality through infrastructure." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Protect Quality Where It Matters", "description": "Be explicit about where craft is a differentiator — and where speed is the priority." },
-      { "title": "Set Clear Quality Bars", "description": "Define what \"excellent\" means in context to avoid perfection drag." },
-      { "title": "Connect Craft to Outcomes", "description": "Help you see how design detail influences trust, engagement, and retention." },
-      { "title": "Create Psychological Safety Around Feedback", "description": "Craft-oriented designers often attach deeply to your work. Normalize iteration." }
+      { "title": "Clarify Quality Bar", "description": "Define where excellence matters most." },
+      { "title": "Connect Craft to Outcomes", "description": "Tie polish to performance." },
+      { "title": "Create Safe Feedback Loops", "description": "Normalize iteration." },
+      { "title": "Protect High-Impact Work", "description": "Give space to elevate standards." }
     ]
   },
   {
@@ -168,38 +133,30 @@
     "emoji": "🔬",
     "shortDescription": "You understand before acting. You search for truth beneath assumptions and optimize for insight depth and validated learning.",
     "strengthsPoints": [
-      { "title": "Insight Depth", "description": "You uncover patterns beneath surface behavior." },
-      { "title": "Decision De-Risking", "description": "You reduce costly missteps through validation." },
-      { "title": "Empathy Anchoring", "description": "You ground product direction in real human needs." },
-      { "title": "Pattern Recognition", "description": "You synthesize across signals to reveal themes." }
+      { "title": "Insight Depth", "description": "You uncover patterns beneath behavior." },
+      { "title": "Decision De-Risking", "description": "You reduce costly missteps." },
+      { "title": "Empathy Anchoring", "description": "You ground direction in lived reality." },
+      { "title": "Pattern Synthesis", "description": "You connect signals across sources." }
     ],
     "risksPoints": [
-      { "title": "Momentum Slowdown", "description": "Over-validation can delay necessary action." },
-      { "title": "Certainty Bias", "description": "You may hesitate when data is incomplete." },
-      { "title": "Over-Scoping Research", "description": "Curiosity can expand beyond practical limits." },
-      { "title": "Influence Gap", "description": "Insights may lose impact if not framed strategically." }
+      { "title": "Momentum Slowdown", "description": "Over-validation can delay action." },
+      { "title": "Certainty Bias", "description": "Incomplete data may stall decisions." },
+      { "title": "Scope Creep", "description": "Curiosity expands beyond constraints." },
+      { "title": "Influence Gap", "description": "Insights may lack strategic framing." }
     ],
-    "bestCompanyStage": [
-      "Early validation phases",
-      "Regulated industries",
-      "New market expansion"
-    ],
-    "bestProjectPhase": [
-      "Discovery",
-      "Concept",
-      "User research and validation"
-    ],
+    "bestCompanyStage": ["Early validation phases", "Regulated industries", "New market expansion"],
+    "bestProjectPhase": ["Discovery", "Concept", "User research and validation"],
     "growthPathPoints": [
-      { "title": "Informed Risk-Taking", "description": "Not every decision requires full certainty. Learn when confidence is sufficient to move forward." },
-      { "title": "Strategic Framing", "description": "Move from insight provider to direction shaper. Research gains power when it guides decisions." },
-      { "title": "Synthesis Velocity", "description": "Distill patterns quickly and clearly. Insight only matters when it drives action." },
-      { "title": "Narrative Clarity", "description": "Communicate findings as stories, not reports. Influence grows when data resonates emotionally." }
+      { "title": "Informed Risk-Taking", "description": "Move forward with partial confidence." },
+      { "title": "Strategic Framing", "description": "Shape direction, not just validation." },
+      { "title": "Faster Synthesis", "description": "Turn insight into action quickly." },
+      { "title": "Narrative Clarity", "description": "Communicate findings with impact." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Give Them Decision Influence, Not Just Data Tasks", "description": "Position you as insight partners in strategic conversations." },
-      { "title": "Set Time-Boxed Research Cycles", "description": "Encourage depth while maintaining forward momentum." },
-      { "title": "Clarify Confidence Thresholds", "description": "Define what level of certainty is needed to move forward." },
-      { "title": "Encourage Storytelling", "description": "Support development of executive-ready narratives, not just research reports." }
+      { "title": "Include You in Directional Decisions", "description": "Not just validation." },
+      { "title": "Time-Box Research", "description": "Balance depth with momentum." },
+      { "title": "Define Confidence Levels", "description": "Clarify when \"enough\" is enough." },
+      { "title": "Value Storytelling", "description": "Support persuasive synthesis." }
     ]
   },
   {
@@ -208,38 +165,30 @@
     "emoji": "🏗",
     "shortDescription": "You make excellence repeatable. You see friction in systems—not just products—and optimize for consistency, workflow clarity, and scalable quality.",
     "strengthsPoints": [
-      { "title": "Process Clarity", "description": "You reduce chaos through structure and alignment." },
-      { "title": "Systematized Quality", "description": "You make excellence repeatable, not accidental." },
-      { "title": "Cross-Team Coordination", "description": "You align roles, rituals, and expectations." },
-      { "title": "Infrastructure Building", "description": "You strengthen the foundation others build upon." }
+      { "title": "Process Clarity", "description": "You reduce chaos through structure." },
+      { "title": "Systematized Quality", "description": "You make excellence repeatable." },
+      { "title": "Cross-Team Alignment", "description": "You coordinate effectively." },
+      { "title": "Infrastructure Building", "description": "You strengthen foundations." }
     ],
     "risksPoints": [
-      { "title": "Process Overhead", "description": "Structure can become heavier than necessary." },
-      { "title": "Creativity Compression", "description": "Too much governance can limit exploration." },
-      { "title": "Rigidity Under Change", "description": "Evolving contexts may challenge established systems." },
-      { "title": "Distance from Product Work", "description": "Operational focus can pull you away from craft." }
+      { "title": "Process Overhead", "description": "Structure can become heavy." },
+      { "title": "Creativity Compression", "description": "Governance may limit exploration." },
+      { "title": "Rigidity Under Change", "description": "Evolving contexts challenge systems." },
+      { "title": "Distance from Craft", "description": "Operational focus reduces hands-on depth." }
     ],
-    "bestCompanyStage": [
-      "Scaling orgs",
-      "Series B+",
-      "Cross-team complexity environments"
-    ],
-    "bestProjectPhase": [
-      "Build",
-      "Scale",
-      "Process and systems"
-    ],
+    "bestCompanyStage": ["Scaling orgs", "Series B+", "Cross-team complexity environments"],
+    "bestProjectPhase": ["Build", "Scale", "Process and systems"],
     "growthPathPoints": [
-      { "title": "Craft Depth", "description": "Maintain hands-on design sharpness. Infrastructure earns trust when paired with execution." },
-      { "title": "Simplification Discipline", "description": "Add structure only when necessary. The best systems reduce complexity rather than increase it." },
-      { "title": "Vision Framing", "description": "Practice articulating what should exist — not just how work flows. Direction complements coordination." },
-      { "title": "Adaptive Flexibility", "description": "Build processes that evolve with the team. Durable systems allow room for creativity." }
+      { "title": "Craft Continuity", "description": "Stay engaged in product execution." },
+      { "title": "Simplification Discipline", "description": "Add process only when needed." },
+      { "title": "Vision Development", "description": "Shape direction, not just workflow." },
+      { "title": "Adaptive Systems", "description": "Build flexibility into structure." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Give Them Authority Over Systems", "description": "Empower you to define rituals, workflows, and design standards." },
-      { "title": "Prevent Process Bloat", "description": "Periodically audit systems to ensure simplicity and relevance." },
-      { "title": "Maintain Craft Exposure", "description": "Ensure you still engage in product work to retain credibility." },
-      { "title": "Recognize Infrastructure Wins", "description": "Operational excellence often goes unnoticed. Make it visible." }
+      { "title": "Grant System Authority", "description": "Empower infrastructure decisions." },
+      { "title": "Audit Process Regularly", "description": "Keep it lean." },
+      { "title": "Balance Ops & Craft", "description": "Maintain product exposure." },
+      { "title": "Recognize Enabling Work", "description": "Make invisible impact visible." }
     ]
   },
   {
@@ -248,38 +197,30 @@
     "emoji": "🤝",
     "shortDescription": "You influence product direction at a systemic level. You connect design to business strategy and optimize for alignment and long-term leverage.",
     "strengthsPoints": [
-      { "title": "Strategic Framing", "description": "You elevate conversations beyond features to direction." },
-      { "title": "Influence Without Authority", "description": "You align stakeholders across competing priorities." },
+      { "title": "Strategic Framing", "description": "You elevate conversations beyond features." },
+      { "title": "Influence Without Authority", "description": "You align across stakeholders." },
       { "title": "Trade-Off Clarity", "description": "You surface what decisions truly mean." },
-      { "title": "Business Fluency", "description": "You connect design choices to long-term leverage." }
+      { "title": "Business Fluency", "description": "You connect design to long-term leverage." }
     ],
     "risksPoints": [
-      { "title": "Over-Alignment", "description": "Seeking consensus may slow decisive action." },
-      { "title": "Distance from Execution", "description": "Strategic focus can reduce hands-on sharpness." },
-      { "title": "Abstraction Drift", "description": "Conversations may rise above tangible outcomes." },
-      { "title": "Influence Fatigue", "description": "High relational load can dilute energy." }
+      { "title": "Over-Alignment", "description": "Consensus-seeking slows momentum." },
+      { "title": "Execution Distance", "description": "Strategy may outpace hands-on depth." },
+      { "title": "Abstraction Drift", "description": "Conversations rise above tangible output." },
+      { "title": "Influence Fatigue", "description": "High relational load drains energy." }
     ],
-    "bestCompanyStage": [
-      "Matrixed orgs",
-      "Platform companies",
-      "Staff/Principal IC roles"
-    ],
-    "bestProjectPhase": [
-      "Concept",
-      "Cross-functional alignment",
-      "Strategy and roadmap"
-    ],
+    "bestCompanyStage": ["Matrixed orgs", "Platform companies", "Staff/Principal IC roles"],
+    "bestProjectPhase": ["Concept", "Cross-functional alignment", "Strategy and roadmap"],
     "growthPathPoints": [
-      { "title": "Execution Anchoring", "description": "Stay connected to hands-on design. Influence remains credible when grounded in craft." },
-      { "title": "Structural Fluency", "description": "Deepen your understanding of systems and dependencies. Strategic guidance strengthens when technically informed." },
-      { "title": "Decisive Leadership", "description": "Know when alignment is complete — and when to move. Progress requires clarity." },
-      { "title": "User Proximity", "description": "Anchor strategy in lived experience. Business direction must remain connected to real needs." }
+      { "title": "Execution Anchoring", "description": "Maintain craft sharpness." },
+      { "title": "Structural Fluency", "description": "Deepen system understanding." },
+      { "title": "Decisive Leadership", "description": "Move when alignment is sufficient." },
+      { "title": "User Grounding", "description": "Keep strategy close to lived experience." }
     ],
     "tipsForManagersPoints": [
-      { "title": "Include Them in Early Strategic Framing", "description": "You are most effective before decisions are locked in." },
-      { "title": "Protect Execution Time", "description": "Balance high-level influence work with meaningful product ownership." },
-      { "title": "Clarify Decision Rights", "description": "Prevent alignment loops by defining who ultimately decides." },
-      { "title": "Anchor Strategy in Users", "description": "Encourage you to stay close to research and real-world signals." }
+      { "title": "Include You Early", "description": "Bring you into framing discussions." },
+      { "title": "Protect Execution Time", "description": "Balance influence and output." },
+      { "title": "Clarify Decision Rights", "description": "Prevent alignment loops." },
+      { "title": "Anchor Strategy in Users", "description": "Maintain real-world signals." }
     ]
   }
 ]

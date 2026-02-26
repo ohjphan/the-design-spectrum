@@ -4,13 +4,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-3xl px-6 py-12 sm:px-12 lg:px-16">
-        <h1 className="mb-10 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
+        <h1 className="font-heading mb-10 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-[68px]">
           About This Project
         </h1>
 
         <div className="space-y-6 text-foreground">
           <p className="text-gray-mid">
-            Over a decade ago, during my UX program at General Assembly, my teacher{" "}
+            Over a decade ago, during my UX program at General Assembly, my instructor{" "}
             <Link
               href="https://www.linkedin.com/in/wesyun/"
               target="_blank"
@@ -94,7 +94,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-foreground bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-background hover:text-foreground"
             >
-              Connect with me on LinkedIn
+              Connect with me on LinkedIn →
             </Link>
           </p>
 

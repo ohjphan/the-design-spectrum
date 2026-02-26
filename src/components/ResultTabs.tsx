@@ -49,7 +49,7 @@ export function ResultTabs({ result }: ResultTabsProps) {
             key={tab.id}
             type="button"
             onClick={() => setActiveTab(tab.id)}
-            className={`shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-6 ${
+            className={`font-heading shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition-colors sm:px-4 ${
               activeTab === tab.id
                 ? "border-accent text-foreground"
                 : "border-transparent text-gray-mid hover:text-foreground"
@@ -68,21 +68,19 @@ export function ResultTabs({ result }: ResultTabsProps) {
         {activeTab === "strengths" && (
           <div className="animate-fade-in space-y-10">
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">Strengths</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">Strengths</p>
               <p className="mb-3 text-gray-mid">Where you generate momentum and clarity without forcing it</p>
               {dominant.strengthsPoints && dominant.strengthsPoints.length > 0 ? (
                 <div className="space-y-0">
                   {dominant.strengthsPoints.map((point, i) => (
                     <div
                       key={i}
-                      className="-mt-px flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4 first:mt-0"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <div className="text-foreground">
-                        <p className="font-medium">{toSentenceCase(point.title)}</p>
-                        <p className="mt-1 text-gray-mid text-sm sm:text-base">
+                        <p className="font-heading font-medium">{toSentenceCase(point.title)}</p>
+                        <p className="mt-0.5 text-gray-mid text-sm sm:text-base">
                           {point.description}
                         </p>
                       </div>
@@ -94,11 +92,9 @@ export function ResultTabs({ result }: ResultTabsProps) {
                   {(dominant.strengths ?? []).map((s, i) => (
                     <li
                       key={i}
-                      className="flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <span className="text-foreground">{s}</span>
                     </li>
                   ))}
@@ -106,21 +102,19 @@ export function ResultTabs({ result }: ResultTabsProps) {
               )}
             </div>
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">Blind Spots</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">Blind Spots</p>
               <p className="mb-3 text-gray-mid">Where your strengths, pushed too far, can create imbalance</p>
               {dominant.risksPoints && dominant.risksPoints.length > 0 ? (
                 <div className="space-y-0">
                   {dominant.risksPoints.map((point, i) => (
                     <div
                       key={i}
-                      className="-mt-px flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4 first:mt-0"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <div className="text-foreground">
-                        <p className="font-medium">{toSentenceCase(point.title)}</p>
-                        <p className="mt-1 text-gray-mid text-sm sm:text-base">
+                        <p className="font-heading font-medium">{toSentenceCase(point.title)}</p>
+                        <p className="mt-0.5 text-gray-mid text-sm sm:text-base">
                           {point.description}
                         </p>
                       </div>
@@ -132,11 +126,9 @@ export function ResultTabs({ result }: ResultTabsProps) {
                   {(dominant.risks ?? []).map((r, i) => (
                     <li
                       key={i}
-                      className="flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <span className="text-foreground">{r}</span>
                     </li>
                   ))}
@@ -148,7 +140,7 @@ export function ResultTabs({ result }: ResultTabsProps) {
         {activeTab === "environments" && (
           <div className="animate-fade-in space-y-10">
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">Best Company Stage</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">Best Company Stage</p>
               <p className="mb-3 text-gray-mid">Where you tend to thrive</p>
               {stages.length > 0 ? (
                 <div className="space-y-0">
@@ -158,15 +150,15 @@ export function ResultTabs({ result }: ResultTabsProps) {
                       href={`/explore/company-stage?stage=${encodeURIComponent(stage.id)}`}
                       className="-mt-px block border border-gray-light px-6 py-4 text-foreground transition-colors hover:border-gray-mid first:mt-0"
                     >
-                      <p className="font-medium">{stage.label}</p>
-                      <p className="mt-1 text-gray-mid">{stage.description}</p>
+                      <p className="font-heading font-medium">{stage.label}</p>
+                      <p className="mt-0.5 text-gray-mid">{stage.description}</p>
                     </Link>
                   ))}
                 </div>
               ) : null}
             </div>
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">Best Project Phase</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">Best Project Phase</p>
               <p className="mb-3 text-gray-mid">Project phases where you shine</p>
               {phases.length > 0 ? (
                 <div className="space-y-0">
@@ -176,8 +168,8 @@ export function ResultTabs({ result }: ResultTabsProps) {
                       href={`/explore/project-lifecycle?phase=${encodeURIComponent(phase.id)}`}
                       className="-mt-px block border border-gray-light px-6 py-4 text-foreground transition-colors hover:border-gray-mid first:mt-0"
                     >
-                      <p className="font-medium">{phase.label}</p>
-                      <p className="mt-1 text-gray-mid">{phase.description}</p>
+                      <p className="font-heading font-medium">{phase.label}</p>
+                      <p className="mt-0.5 text-gray-mid">{phase.description}</p>
                     </Link>
                   ))}
                 </div>
@@ -188,21 +180,19 @@ export function ResultTabs({ result }: ResultTabsProps) {
         {activeTab === "growth" && (
           <div className="animate-fade-in space-y-10">
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">Growth Paths</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">Growth Paths</p>
               <p className="mb-3 text-gray-mid">To expand your impact, consider building strength in</p>
               {dominant.growthPathPoints && dominant.growthPathPoints.length > 0 ? (
                 <div className="space-y-0">
                   {dominant.growthPathPoints.map((point, i) => (
                     <div
                       key={i}
-                      className="-mt-px flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4 first:mt-0"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <div className="text-foreground">
-                        <p className="font-medium">{toSentenceCase(point.title)}</p>
-                        <p className="mt-1 text-gray-mid text-sm sm:text-base">
+                        <p className="font-heading font-medium">{toSentenceCase(point.title)}</p>
+                        <p className="mt-0.5 text-gray-mid text-sm sm:text-base">
                           {point.description}
                         </p>
                       </div>
@@ -210,10 +200,8 @@ export function ResultTabs({ result }: ResultTabsProps) {
                   ))}
                 </div>
               ) : (
-                <div className="flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-4 pl-5 pr-4">
-                  <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                    1
-                  </span>
+                <div className="flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">1</span>
                   <p className="text-foreground">
                     {dominant.growthPath ?? "—"}
                   </p>
@@ -221,21 +209,19 @@ export function ResultTabs({ result }: ResultTabsProps) {
               )}
             </div>
             <div>
-              <p className="mb-1 text-lg font-medium tracking-tight text-foreground">How your manager can help</p>
-              <p className="mb-3 text-gray-mid">To support and amplify your archetype</p>
+              <p className="font-heading mb-1 text-xl font-medium tracking-tight text-foreground">How your manager can help</p>
+              <p className="mb-3 text-gray-mid">You do your best work when</p>
               {dominant.tipsForManagersPoints && dominant.tipsForManagersPoints.length > 0 ? (
                 <div className="space-y-0">
                   {dominant.tipsForManagersPoints.map((point, i) => (
                     <div
                       key={i}
-                      className="-mt-px flex items-center gap-4 border-l-4 border-gray-light bg-gray-light/5 py-3 pl-5 pr-4 first:mt-0"
+                      className="mt-px flex items-center gap-4 bg-gray-light/5 py-4 pl-6 pr-5 first:mt-0"
                     >
-                      <span className="font-medium tracking-tight text-foreground text-2xl sm:text-3xl shrink-0 mr-4">
-                        {i + 1}
-                      </span>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-gray-light text-lg font-medium tracking-tight text-accent sm:h-9 sm:w-9 sm:text-xl">{i + 1}</span>
                       <div className="text-foreground">
-                        <p className="font-medium">{toSentenceCase(point.title)}</p>
-                        <p className="mt-1 text-gray-mid text-sm sm:text-base">
+                        <p className="font-heading font-medium">{toSentenceCase(point.title)}</p>
+                        <p className="mt-0.5 text-gray-mid text-sm sm:text-base">
                           {point.description}
                         </p>
                       </div>

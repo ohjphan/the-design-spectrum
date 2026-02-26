@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
@@ -8,7 +8,13 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://the-design-spectrum.vercel.app"),
   title: "Design Archetype Lab — Discover Your Product Design Archetype",
   description:
     "A 5-question diagnostic to discover your dominant design archetype and explore how different archetypes fit across company and project stages.",
@@ -21,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         <Header />
         <main className="min-h-screen">{children}</main>
       </body>

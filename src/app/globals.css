@@ -3,7 +3,7 @@
 :root {
   --background: #F5F1E8;
   --foreground: #000000;
-  --accent: #C1121F;
+  --accent: #FF4B33;
   --gray-light: #A8A8A8;
   --gray-mid: #505050;
 }
@@ -15,6 +15,7 @@
   --color-gray-light: var(--gray-light);
   --color-gray-mid: var(--gray-mid);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
@@ -24,14 +25,23 @@ body {
   font-family: var(--font-sans);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Explicit heading font so Space Grotesk applies even if Tailwind doesn't generate font-heading */
+.font-heading {
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch' result='t'/%3E%3CfeColorMatrix in='t' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
-  opacity: 0.04;
+  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -68,4 +78,11 @@ body > * {
   animation: segmentIn 0.4s ease-out forwards;
   opacity: 0;
   transform-origin: 140px 140px;
+}
+
+/* Logo mark segment pop-in (same motion, origin at center of 32×32 viewBox) */
+.animate-logo-segment-in {
+  animation: segmentIn 0.4s ease-out forwards;
+  opacity: 0;
+  transform-origin: 16px 16px;
 }

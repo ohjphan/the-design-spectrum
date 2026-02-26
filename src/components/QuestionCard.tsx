@@ -15,7 +15,7 @@ export function QuestionCard({
 }: QuestionCardProps) {
   return (
     <div className="space-y-10">
-      <h2 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+      <h2 className="font-heading text-3xl font-medium tracking-tight text-foreground sm:text-4xl lg:text-5xl">
         {questionText}
       </h2>
       <ul className="grid sm:grid-cols-1">
